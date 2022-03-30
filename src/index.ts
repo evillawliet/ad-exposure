@@ -9,7 +9,7 @@ interface ObserverConfig extends IntersectionObserverInit {
 
 const isArray = Array.isArray
 
-export function exposure(target: ObserverTarget | ObserverTarget[], options?: ObserverConfig) {
+export function exposure(target: ObserverTarget | ObserverTarget[], options?: ObserverConfig): IntersectionObserver | undefined {
   const weakMap = new WeakMap()
 
   try {
@@ -25,7 +25,7 @@ export function exposure(target: ObserverTarget | ObserverTarget[], options?: Ob
       }
     }, {
       root: options?.root || null,
-      threshold: options?.threshold || 1,
+      threshold: options?.threshold || 0,
       rootMargin: options?.rootMargin || '0px',
     })
 
@@ -55,8 +55,10 @@ export function exposure(target: ObserverTarget | ObserverTarget[], options?: Ob
         weakMap.set(target.ele, target.fallback)
       }
     }
+
+    return observer
   }
   catch (error) {
-
+    console.error(error)
   }
 }
