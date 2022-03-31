@@ -50,6 +50,9 @@
     "test": "vitest",
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "intersection-observer": "^0.12.0"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^0.18.9",
     "@antfu/ni": "^0.13.2",
@@ -64,8 +67,5 @@
     "unbuild": "^0.7.0",
     "vite": "^2.8.6",
     "vitest": "^0.7.10"
-  },
-  "dependencies": {
-    "intersection-observer": "^0.12.0"
   }
 }
