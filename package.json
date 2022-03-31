@@ -1,20 +1,22 @@
 {
-  "name": "name",
-  "version": "0.0.0",
+  "name": "ad-exposure",
+  "version": "0.0.2-beta.1",
   "packageManager": "pnpm@6.32.3",
-  "description": "",
-  "keywords": [],
-  "homepage": "https://github.com/antfu/[name]#readme",
+  "description": "handle ad exposure",
+  "keywords": [
+    "ad",
+    "exposure"
+  ],
+  "homepage": "https://github.com/evillawliet/ad-exposure#readme",
   "bugs": {
-    "url": "https://github.com/antfu/[name]/issues"
+    "url": "https://github.com/evillawliet/ad-exposure/issues"
   },
   "license": "MIT",
-  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "author": "lawliet",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antfu/[name].git"
+    "url": "git+https://github.com/evillawliet/ad-exposure.git"
   },
-  "funding": "https://github.com/sponsors/antfu",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
