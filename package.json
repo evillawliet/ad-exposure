@@ -1,6 +1,6 @@
 {
   "name": "ad-exposure",
-  "version": "0.0.2-beta.3",
+  "version": "0.1.0",
   "packageManager": "pnpm@6.32.3",
   "description": "handle ad exposure",
   "keywords": [
